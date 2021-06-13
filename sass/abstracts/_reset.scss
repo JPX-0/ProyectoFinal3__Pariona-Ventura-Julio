@@ -1,0 +1,29 @@
+*{
+  box-sizing      : border-box;
+  list-style-type : none;
+  margin          : 0;
+  padding         : 0;
+  text-decoration : none;
+}
+
+html{
+  font-family : open sans,sans-serif;
+  font-size   : 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.col-sm-0 {
+  @media screen and (min-width: 800px) {
+    display: block;
+  }
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+}

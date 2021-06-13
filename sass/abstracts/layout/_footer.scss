@@ -1,0 +1,29 @@
+.footer {
+  background-color: black;
+  &__left {
+    display: flex;
+    color: $c-footer;
+    justify-content: center;
+    &-title {
+      font-family: $f-logo;
+      font-size: $m-text * 6;
+    }
+    &-subtitle {
+      font-size: $m-text * 2;
+      align-self: center;
+      margin-left: 1rem;
+    }
+  }
+  &__right {
+    display: flex;
+  }
+  &__nav {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    &-link {
+      color: $c-text;
+      font-size: $m-text * 3;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+body {
+  background-attachment : fixed;
+  background-image      : url(https://image.freepik.com/vector-gratis/fondo-3d-geometrico-rojo-negro_30227-42.jpg);
+  background-repeat     : no-repeat;
+  background-size       : cover;
+  display               : grid;
+  grid-template-rows    : auto 1fr auto;
+}
+
+.body--color {
+  background-color: $c-body-trasparent;
+}

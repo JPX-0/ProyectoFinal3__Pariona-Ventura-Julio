@@ -1,0 +1,26 @@
+.header {
+  top: 0;
+  position: sticky;
+  z-index: 100;
+  &__logo {
+    font-size: $m-text * 6;
+    font-family: $f-logo;
+    margin-left: 2rem;
+  }
+  &__menu {
+    &-list {
+      margin: 0 2rem;
+      font-size: $m-text * 3;
+      font-family: $f-menu;
+    }
+    &-donar:hover {
+      text-decoration: underline;
+    }
+  }
+  &__submenu {
+    width: 100%;
+    &-link:hover {
+      text-align: center;
+    }
+  }
+}

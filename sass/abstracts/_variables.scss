@@ -1,0 +1,21 @@
+// COLOUR
+$c-body: white;
+$c-body-trasparent: rgba($c-body, 0.5);
+$c-header: black;
+$c-main: beige;
+$c-footer: darkgray;
+$c-text: rgb(30, 30, 30);
+
+// FONTS
+$f-title: "fantasy";
+$f-subtitle: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+$f-description: "#";
+$f-aside: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+$f-name: "#";
+$f-logo: 'Monoton', cursive;
+$f-menu: 'Zen Dots', cursive;
+
+// MEASURES
+$m-text: 0.5rem;
+$m-title: $m-text * 9;
+$m-subtitle: $m-text * 6;
