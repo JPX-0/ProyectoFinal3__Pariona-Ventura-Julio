@@ -5,15 +5,21 @@
       height: 100vh;
     }
     &-figure--medio {
-      @media screen and (min-width: 800px) {
+      @media screen and (min-width: 768px) {
         height: 10rem;
       }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 767px) {
         height: 5rem;
       }
     }
   }
   &__aside {
+    @media screen and (min-width:576px) {
+      padding: 0;
+    }
+    @media screen and (max-width:575px) {
+      padding: 0 1.5rem;
+    }
     &-nav {
       background-color: white;
     }
@@ -21,53 +27,418 @@
       transition: 0.3s;
     }
     &-link:hover {
-      box-shadow: 0px 0px 1px 2px gray;
-      transform: scale(1.05);
-      transition: 0.3s;
-      text-align: center;
+      box-shadow : 0px 0px 1px 2px gray;
+      text-align : center;
+      transform  : scale(1.05);
+      transition : 0.3s;
     }
   }
   &__rs {
+    &--absolute {
+      align-items : center;
+      bottom      : 0;
+      display     : flex;
+      position    : fixed;
+      right       : 1.5rem;
+      top         : 0;
+    }
     &-title {
-      font-size: $m-text * 4;
-      font-family: $f-aside;
+      font-family : $f-aside;
+      font-size   : $m-text * 4;
+    }
+    .ul {
+      @media screen and (max-width: 575px) {
+        display         : flex;
+        gap             : 1rem;
+        justify-content : center;
+      }
+    }
+    &-ul {
+      display : grid;
+      gap     : 1rem;
+      width   : 4rem;
+      @media screen and (max-width: 575px) {
+        display: none;
+      }
+    }
+    &-list {
+      display         : flex;
+      justify-content : center;
     }
     &-img {
-      width: 3.5rem;
-      height: 3.5rem;
-      transition: 0.3s;
+      height     : 3.5rem;
+      transition : 0.3s;
+      width      : 3.5rem;
     }
     &-img:hover {
-      box-shadow: 0px 0px 1px 2px gray;
-      transform: scale(1.05);
-      transition: 0.3s;
-      cursor: pointer;
+      box-shadow : 0px 0px 1px 2px gray;
+      cursor     : pointer;
+      transform  : scale(1.05);
+      transition : 0.3s;
+    }
+  }
+  &__news {
+    border         : 0.2rem solid white;
+    display        : flex;
+    flex-direction : row;
+    flex-wrap      : nowrap;
+    height         : auto;
+    margin         : 0 1.5rem;
+    @media screen and (min-width: 768px) {
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+    @media screen and (max-width: 767px) {
+      flex-wrap       : wrap;
+      justify-content : center;
+    }
+    &:hover {
+      border-color: aqua;
+    }
+    &-container {
+      height   : 18rem;
+      overflow : hidden;
+      width    : 100%;
+    }
+    &-img {
+      height     : 100%;
+      object-fit : cover;
+      width      : 100%;
+    }
+    &-inf {
+      display            : grid;
+      grid-template-rows : 1fr auto;
+    }
+    &-more {
+      align-items        : center;
+      display            : grid;
+      grid-template-rows : auto auto;
+      height             : 100%;
+      justify-content    : center;
+      position           : relative;
+    }
+    .icon__more {
+      display   : none;
+      font-size : 10rem;
+      left      : 0;
+      position  : absolute;
+      right     : 0;
+    }
+    .icon__new {
+      align-self : end;
+      color      : aqua;
+      font-size  : 6rem;
+    }
+    .icon__text {
+      align-self : start;
+      font-size  : 2rem;
+    }
+    &-more:hover .icon__more {
+      display : block;
+      opacity : 0.6;
     }
   }
 }
 
 .section {
   &__title {
-    font-size: $m-title;
-    font-family: $f-title;
-    font-weight: 900;
-    text-align: center;
+    @include title (900, center);
   }
   &__subtitle {
-    font-size: $m-subtitle;
-    font-family: $f-subtitle;
+    @include subtitle (600, start);
+  }
+  &__form {
+    display: flex;
+    justify-content: center;
+    .form-control {
+      width: 25rem;
+    }
+  }
+  &__episodes {
+    display         : flex;
+    flex-flow       : row wrap;
+    gap             : 1rem;
+    justify-content : space-evenly;
+    margin          : 0 1rem;
+  }
+  .modal {
+    &__title {
+      font-size: 2rem;
+      @media screen and (max-width: 767px) {
+        font-size: 1.5rem;
+      }
+    }
+    &-footer {
+      display         : flex;
+      justify-content : space-evenly;
+      width           : 100%;
+      @media screen and (max-width: 767px) {
+        padding-top: 0;
+      }
+    }
+  }
+  &__random {
+    background-color: white;
+    height: max-content;
   }
 }
 
-.carousel__img-box {
-  filter: brightness(70%);
+.figure {
+  border-radius : 1rem;
+  border        : 0.2rem solid white;
+  cursor        : pointer;
+  height        : 15.2rem;
+  overflow      : hidden;
+  position      : relative;
+  transition    : 0.3s;
+  width         : 22rem;
+  &--temp {
+    height: 27rem;
+  }
+  &:hover {
+    border-color : aqua;
+    transition   : 0.3s;
+  }
+  &__img {
+    border-radius : 1rem;
+    height        : 100%;
+    object-fit    : cover;
+    transition    : 0.3s;
+    width         : 100%;
+  }
+  &:hover &__img {
+    transform  : scale(1.2);
+    transition : 0.3s ease;
+  }
+  &__container {
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    position   : absolute;
+    background : linear-gradient(transparent, rgba(0, 0, 0, 0.5), black);
+    border-radius: 1rem;
+  }
+  &__enter {
+    border-radius  : 5rem;
+    display        : flex;
+    flex-direction : row-reverse;
+    height         : 3.5rem;
+    overflow       : hidden;
+    position       : absolute;
+    transition     : 0.3s;
+    width          : 9rem;
+    right: 0.5rem;
+    top: 0.5rem;
+    &-icon {
+      align-items      : center;
+      background-color : white;
+      border-radius    : 100%;
+      color            : aqua;
+      display          : flex;
+      font-size        : 2.5rem;
+      padding          : 0.5rem;
+      position         : absolute;
+      z-index          : 1;
+    }
+    &-span {
+      background-color : aqua;
+      border-radius    : 1rem;
+      color            : black;
+      font-size        : 1rem;
+      padding          : 0.3rem 1.5rem 0.3rem 0.5rem;
+      position         : absolute;
+      right            : 2.5rem;
+      top              : 0.875rem;
+      transform        : translateX(50rem);
+      transition       : 0.7s;
+    }
+  }
+  &:hover &__enter-span {
+    transform  : translateX(0);
+    transition : 0.3s;
+  }
+  &__box {
+    position: relative;
+    margin-top: 90%;
+    margin-left: 0.5rem;
+  }
+  &__type {
+    border-radius   : 0.8rem;
+    color           : white;
+    font-size       : 0.9rem;
+    font-style      : italic;
+    font-weight     : 900;
+    left            : 0.5rem;
+    letter-spacing  : 0.1rem;
+    padding         : 0.5rem 1rem;
+    position        : absolute;
+    top             : 1rem;
+    &--anime, &--donghua, &--aeni {
+      background-color: blue;
+    }
+    &--ova {
+      background-color: orange;
+    }
+    &--pelicula {
+      background-color: green;
+    }
+    &--especial {
+      background-color: yellow;
+    }
+  }
+  &__number {
+    background-color : red;
+    border-radius    : 0.8rem;
+    bottom           : 3rem;
+    color            : white;
+    left             : 0.5rem;
+    padding          : 0.3rem 1rem;
+    position         : absolute;
+  }
+  &__title {
+    bottom        : 0;
+    color         : white;
+    font-size     : 1.5rem;
+    font-weight   : 600;
+    left          : 0;
+    overflow      : hidden;
+    padding       : 0.5rem 1rem;
+    position      : absolute;
+    right         : 0;
+    text-overflow : ellipsis;
+    transition    : 0.3s ease;
+    white-space   : nowrap;
+  }
+}
+
+#video-1, #video-2, #video-3, #video-4, #video-5 {
+  display: none;
+}
+
+#video-1:checked ~ .video,
+#video-2:checked ~ .video,
+#video-3:checked ~ .video,
+#video-4:checked ~ .video,
+#video-5:checked ~ .video {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.video {
+  &__options {
+    display: flex;
+    gap: 1rem;
+    margin: 0 0 1rem;
+    &-li {
+      background-color: gray;
+      padding: 1rem;
+      width: 10rem;
+      text-align: center;
+      border-radius: 0.5rem;
+      transition: 0.3s;
+      @media screen and (max-width: 767px) {
+        padding: 0.2rem 0.8rem;
+      }
+      &:hover {
+        background-color: black;
+        transition: 0.3s;
+      }
+    }
+    &-a {
+      color: white;
+      transition: 0.3s;
+      .video__options-li:hover & {
+        color: aqua;
+        transition: 0.3s;
+      }
+    }
+  }
+  &__box {
+    display: flex;
+    justify-content: center;
+    &-iframe {
+      width: 100%;
+      height: 44rem;
+      @media screen and (max-width: 575px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 767px) {
+        width: 90%;
+        height: 22rem;
+      }
+    }
+  }
+}
+
+.box__img {
+  width: 100%;
+  height: 20rem;
+  filter: brightness(40%);
+  .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.carousel-caption {
+  top: 1rem;
+  right: 0;
+  left: 0;
+  bottom: 1.2rem;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+  align-items: center;
+  .video-slide {
+    display: flex;
+    padding: 0.8rem;
+    gap: 1rem;
+    justify-content: center;
+    &__label {
+      background-color: rgba(255, 255, 255, 0.1);
+      display: block;
+      font-weight: 900;
+    }
+    &__icon {
+      display: none !important;
+      font-size: 1rem;
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 2.5rem;
+      width: 1.5rem;
+      align-items: center;
+    }
+    &__label:hover &__icon {
+      display: flex !important;
+    }
+    &__btn {
+      width: 10rem;
+      height: 2.5rem;
+      position: relative;
+    }
+    &__title {
+      color: white;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  &__group {
+    display: flex;
+    gap: 0.5rem;
+  }
 }
 
 .flechita {
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 768px) {
     padding: 1rem;
   }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 767px) {
     padding: 1.5rem;
   }
   &__box {
@@ -76,10 +447,10 @@
     right: 2rem;
     &-link {
       color: white;
-      @media screen and (min-width: 800px) {
+      @media screen and (min-width: 768px) {
         font-size: $m-text * 6;
       }
-      @media screen and (max-width: 800px) {
+      @media screen and (max-width: 767px) {
         font-size: $m-text * 8;
       }
     }

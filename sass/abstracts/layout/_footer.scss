@@ -7,11 +7,13 @@
     &-title {
       font-family: $f-logo;
       font-size: $m-text * 6;
+      color: gray;
     }
     &-subtitle {
       font-size: $m-text * 2;
       align-self: center;
       margin-left: 1rem;
+      color: gray;
     }
   }
   &__right {

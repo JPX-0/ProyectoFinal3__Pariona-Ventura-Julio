@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!---///----- IMPORTANT ---///----->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!---///----- TITLE ---///----->
+	<title>Tarea SASS</title>
+  <!---///----- CSS ---///----->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/main.css">
+  <!---///----- FONT ---///----->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <!-- Zen Dots // menu-->
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+  <!-- Monoton // logo-->
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <!-- Creepster // EVENT - halloween -->
+  <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+  <!-- Londrina Shadow // EVENT - navidad -->
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+  <!---///----- ICON ---///----->
+	<script src="https://kit.fontawesome.com/14f9b2c665.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container body--color p-0">
+
+    <!----------///// ⌂⌂⌂ /////---------- 
+    ██▀ █▄ █ ▄▀▀ ▄▀▄ ██▄ ██▀ ▀█▀ ▄▀▄ █▀▄ ▄▀▄ 
+    █▄▄ █ ▀█ ▀▄▄ █▀█ █▄█ █▄▄ █▄▄ █▀█ █▄▀ ▀▄▀  
+    ----------///// ⌂⌂⌂ /////---------->
+    <header class="header">
+      <!--  -->
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand header__logo m-auto" href="#"><i class="fab fa-css3"></i>Mi Página</a>
+          <label for="" class="header__menu-btn-user-1 ">
+            <button type="button" class="btn btn-outline-primary">SESION <i class="far fa-user-circle"></i></button>
+          </label>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0 hedaer__menu">
+              <li class="nav-item dropdown header__menu-list">
+                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">¿Que quieres ver?</a>
+                <ul class="dropdown-menu header__submenu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item header__submenu-link" href="./anime/home.html">Anime</a></li>
+                  <li><a class="dropdown-item header__submenu-link" href="./donghua/home.html">Donghua</a></li>
+                  <li><a class="dropdown-item header__submenu-link" href="#">Opci+on 1-3 (no disponible)</a></li>
+                  <li><a class="dropdown-item header__submenu-link" href="#">Opci+on 1-4 (no disponible)</a></li>
+                  <li><a class="dropdown-item header__submenu-link" href="#">Opci+on 1-5 (no disponible)</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown header__menu-list">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">ELEGIR OPCIÓN 2</a>
+                <ul class="dropdown-menu header__submenu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item header__submenu-link" href="#">Opci+on 2-1 (no disponible)</a></li>
+                  <li><a class="dropdown-item header__submenu-link" href="#">Opci+on 2-2 (no disponible)</a></li>
+                  <li><a class="dropdown-item header__submenu-link" href="#">Opci+on 2-3 (no disponible)</a></li>
+                </ul>
+              </li>
+              <li class="nav-item header__menu-list">
+                <a class="nav-link header__menu-donar" aria-current="page" href="#"><span>Donar <i class="fas fa-donate"></i></span></a>
+              </li>
+              <label for="" class="header__menu-btn-user-2">
+                <button type="button" class="btn btn-outline-primary">SESION <i class="far fa-user-circle"></i></button>
+              </label>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!----------///// ⌂⌂⌂ /////---------- 
+      ▄▀▀ █ █ ██▀ █▀▄ █▀▄ ▄▀▄ 
+      ▀▄▄ ▀▄█ █▄▄ █▀▄ █▀  ▀▄▀   
+    ----------///// ⌂⌂⌂ /////---------->
+    <main class="main row m-2">
+
+      <!---///----- PUBLICIDAD ---///----->
+      <!-- ××× PUBLICIDAD-1 ××× -->
+      <aside class="col-md-2 col-sm-0 main__publicity">
+        <span ><i class="fas fa-ad"></i>Espacio Publicitario </span>
+        <figure class="main__publicity-figure--lateral rounded">
+          <a href="" target="_blank">
+            <img src="" alt="Publicidad1">
+          </a>
+        </figure>
+      </aside>
+      <div class="col-md-8">
+        <!-- ××× PUBLICIDAD-2 ××× -->
+        <aside class="main__publicity">
+          <span><i class="fas fa-ad"></i>Espacio Publicitario </span>
+          <figure class="main__publicity-figure--medio rounded">
+            <a href="" target="_blank">
+              <img src="" alt="Publicidad3">
+            </a>
+          </figure>
+        </aside>
+        <!---///----- CONTENEDOR ---///----->
+        <div class="row p-3">
+          <!-- ××× ENTRETENIMIENTO ××× -->
+          <section class="col-lg-9 col-sm-12 p-2 section">
+            <h2 class="section__title">Recién Publicados</h2>
+            <!-- VER -->
+            <div class="container p-3">
+              <!-- Acordion -1 -->
+              <div class="accordion accordion-flush" id="accordionFlushExample-ver">
+                <div class="accordion-item mb-5">
+                  <h2 class="accordion-header" id="flush-heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">Anime</button>
+                  </h2>
+                  <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#accordionFlushExample-ver">
+                    <div class="accordion-body">
+                      <!-- Anime -->
+                      <div id="carouselExampleCaptions-Anime" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions-Anime" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions-Anime" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions-Anime" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="box__img">
+                              <img src="https://64.media.tumblr.com/61192ca5ca13af03a1db2892f4bec7bf/a07d1b9773b3fdb9-a1/s540x810/2b54fd8c4179ea3e3b8d0e9502e993798a3cce5a.gifv" class="img" alt="Shaman King (2021)">
+                            </div>
+                            <div class="carousel-caption">
+                              <div class="video-slide">
+                                <button class="btn btn-sm btn-outline-secondary video-slide__btn p-0" type="button">
+                                  <a href="#" class="video-slide__label py-2 px-3">Visitar <i class="fas fa-running video-slide__icon"></i></a>
+                                </button>
+                                <button class="btn btn-outline-success video-slide__btn p-0" type="button" data-bs-toggle="modal" href="#exampleModalToggle--ShamanKing2021-new" role="button">
+                                  <label for="" class="video-slide__label py-2 px-3">Ver ahora <i class="far fa-play-circle video-slide__icon"></i></label>
+                                </button>
+                                <!-- Capitulo - nuevo -->
+                                <div class="modal fade" id="exampleModalToggle--ShamanKing2021-new" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header px-4">
+                                        <h5 class="modal__title" id="exampleModalToggleLabel">Shaman King (2021)</h5>
+                                        <span class="badge rounded-pill bg-secondary mx-3 p-2">EPISODIO: 12</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body video">
+                                        <ol role="tablist" class="video__options p-0">
+                                          <li data-id="1" title="GoCDN" class="video__options-li">
+                                            <a href="#option1" class="video__options-a">Opción 1</a>
+                                          </li>
+                                          <li data-id="2" title="Netu" class="video__options-li">
+                                            <a href="#option2" class="video__options-a">Opción 2</a>
+                                          </li>
+                                          <li data-id="3" title="Okru" class="video__options-li">
+                                            <a href="#option3" class="video__options-a">Opción 3</a>
+                                          </li>
+                                        </ol>
+                                        <div class="video__box">
+                                          <iframe src="https://streamium.xyz/gocdn.html#aWE5YkhDREhMY1NzZHBxdXVGdVNITEJ5bVFuS0RiSHJXb3pNalRXWW44VVZxMUN2c0ZNcmZHMFJUaERuWU15VEZialRqSmQxVVVPWUx5QUhQbWxEWnhjY0lETGZRRlV3anAyL0xGNWdhVE0wWVc2OEc5RVZydDEyYURiL2dLbm4=" frameborder="0" class="video__box-iframe rounded"></iframe>
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle--ShamanKing2021-11" data-bs-toggle="modal" data-bs-dismiss="modal">Capitulo anterior</button>
+                                        <a href="#" class="btn btn-primary">Lista de episodios</a>
+                                        <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle--ShamanKing(2021)-" data-bs-toggle="modal" data-bs-dismiss="modal">Siguiente capitulo</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <h5 class="video-slide__title">Shaman King (2021)</h5>
+                              <p class="d-none d-md-block">シャーマンキング</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="box__img">
+                              <img src="https://64.media.tumblr.com/0c179317a3c2149eab5be4fe0f9926a6/30d603a95ad98574-da/s540x810/c929d3395c5af702edc58e1fe116e88136de48c3.gifv" class="img" alt="Bakuten!!">
+                            </div>
+                            <div class="carousel-caption">
+                              <div class="video-slide">
+                                <button class="btn btn-sm btn-outline-secondary video-slide__btn p-0" type="button">
+                                  <a href="#" class="video-slide__label py-2 px-3">Visitar <i class="fas fa-running video-slide__icon"></i></a>
+                                </button>
+                                <button class="btn btn-outline-success video-slide__btn p-0" type="button" data-bs-toggle="modal" href="#exampleModalToggle--Bakuten-new" role="button">
+                                  <label for="" class="video-slide__label py-2 px-3">Ver ahora <i class="far fa-play-circle video-slide__icon"></i></label>
+                                </button>
+                                <!-- Capitulo - nuevo -->
+                                <div class="modal fade" id="exampleModalToggle--Bakuten-new" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header px-4">
+                                        <h5 class="modal__title" id="exampleModalToggleLabel">Bakuten!!</h5>
+                                        <span class="badge rounded-pill bg-secondary mx-3 p-2">EPISODIO: 11</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body video">
+                                        <ol role="tablist" class="video__options p-0">
+                                          <li data-id="1" title="GoCDN" class="video__options-li">
+                                            <a href="#option1" class="video__options-a">Opción 1</a>
+                                          </li>
+                                          <li data-id="2" title="Netu" class="video__options-li">
+                                            <a href="#option2" class="video__options-a">Opción 2</a>
+                                          </li>
+                                          <li data-id="3" title="Okru" class="video__options-li">
+                                            <a href="#option3" class="video__options-a">Opción 3</a>
+                                          </li>
+                                        </ol>
+                                        <div class="video__box">
+                                          <iframe src="https://streamium.xyz/gocdn.html#dmkzZm9DODI1ZmdTWWtkYWZTQmhkaUhLQ1J5a203ZDlNbE83UmR3NlA1eDgwcDJvbFlxL2VKamYrY1lqWlp0VVJNU09tZFI3TXIxVFVLNFYrcnM5WUtRcUk4NEI5V05rajNFRUcrQndqM3c9" frameborder="0" class="video__box-iframe rounded"></iframe>
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle--Bakuten-10" data-bs-toggle="modal" data-bs-dismiss="modal">Capitulo anterior</button>
+                                        <a href="#" class="btn btn-primary">Lista de episodios</a>
+                                        <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle--Bakuten-" data-bs-toggle="modal" data-bs-dismiss="modal">Siguiente capitulo</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <h5 class="video-slide__title">Bakuten!!</h5>
+                              <p class="d-none d-md-block">バクテン!!</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="box__img">
+                              <img src="https://64.media.tumblr.com/05e8aa3a36a729cbddaef0f7f84c934f/625b2453ecbcbee3-fd/s400x600/4543b7b032ebc1b6c90f62874a5559d613bc1c0c.gifv" class="img"alt="Zombieland Saga: Revenge">
+                            </div>
+                            <div class="carousel-caption">
+                              <div class="video-slide">
+                                <button class="btn btn-sm btn-outline-secondary video-slide__btn p-0" type="button">
+                                  <a href="#" class="video-slide__label py-2 px-3">Visitar <i class="fas fa-running video-slide__icon"></i></a>
+                                </button>
+                                <button class="btn btn-outline-success video-slide__btn p-0" type="button" data-bs-toggle="modal" href="#exampleModalToggle--ZombielandSagaRevenge-new" role="button">
+                                  <label for="" class="video-slide__label py-2 px-3">Ver ahora <i class="far fa-play-circle video-slide__icon"></i></label>
+                                </button>
+                                <!-- Capitulo - nuevo -->
+                                <div class="modal fade" id="exampleModalToggle--ZombielandSagaRevenge-new" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header px-4">
+                                        <h5 class="modal__title" id="exampleModalToggleLabel">Zombieland Saga: Revenge</h5>
+                                        <span class="badge rounded-pill bg-secondary mx-3 p-2">EPISODIO: 11</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body video">
+                                        <ol role="tablist" class="video__options p-0">
+                                          <li data-id="1" title="GoCDN" class="video__options-li">
+                                            <a href="#option1" class="video__options-a">Opción 1</a>
+                                          </li>
+                                          <li data-id="2" title="Netu" class="video__options-li">
+                                            <a href="#option2" class="video__options-a">Opción 2</a>
+                                          </li>
+                                          <li data-id="3" title="Okru" class="video__options-li">
+                                            <a href="#option3" class="video__options-a">Opción 3</a>
+                                          </li>
+                                        </ol>
+                                        <div class="video__box">
+                                          <iframe src="https://streamium.xyz/gocdn.html#ZGJmbmhCQVBxVWo1dzBGak1QRjYvZ3FFYW9TWE9obTBNZFJmVUxpaTBackMwVEZ4MVU4VkVnbllNQkNtUG9LM0hjdGQvMXF4TTcrMEF1d1lDL1V5UDgxQ1NiY3h5OHBPV2o0bS94ZWI5S3kzOXloRmRDVlZMYkFrSmcvZjMzK0E=" frameborder="0" class="video__box-iframe rounded"></iframe>
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle--ZombielandSagaRevenge-10" data-bs-toggle="modal" data-bs-dismiss="modal">Capitulo anterior</button>
+                                        <a href="#" class="btn btn-primary">Lista de episodios</a>
+                                        <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle--ZombielandSagaRevenge-" data-bs-toggle="modal" data-bs-dismiss="modal">Siguiente capitulo</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <h5 class="video-slide__title">Zombieland Saga: Revenge</h5>
+                              <p class="d-none d-md-block">ゾンビランドサガ リベンジ</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-Anime" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-Anime" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <!-- Fin Anime -->
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-5">
+                  <h2 class="accordion-header" id="flush-heading2">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">Donghua</button>
+                  </h2>
+                  <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#accordionFlushExample-ver">
+                    <div class="accordion-body">
+                      <!-- Donghua -->
+                      <div id="carouselExampleCaptions-Donghua" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions-Donghua" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions-Donghua" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions-Donghua" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="box__img">
+                              <img src="https://www.mundodonghua.com/thumbs/S/Spiritual_Master/164f5pjmbi5_1b49w0v7.jpg" class="img" alt="SPIRITUAL MASTER 2">
+                            </div>
+                            <div class="carousel-caption">
+                              <div class="video">
+                                <button class="btn btn-sm btn-outline-secondary video-slide__btn p-0" type="button">
+                                  <a href="#" class="video-slide__label py-2 px-3">Visitar <i class="fas fa-running video-slide__icon"></i></a>
+                                </button>
+                                <button class="btn btn-outline-success video-slide__btn p-0" type="button" data-bs-toggle="modal" href="#exampleModalToggle--SPIRITUALMASTER2-new" role="button">
+                                  <label for="" class="video-slide__label py-2 px-3">Ver ahora <i class="far fa-play-circle video-slide__icon"></i></label>
+                                </button>
+                                <!-- Capitulo - nuevo -->
+                                <div class="modal fade" id="exampleModalToggle--SPIRITUALMASTER2-new" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header px-4">
+                                        <h5 class="modal__title" id="exampleModalToggleLabel">SPIRITUAL MASTER 2</h5>
+                                        <span class="badge rounded-pill bg-secondary mx-3 p-2">EPISODIO: 27</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body video">
+                                        <ol role="tablist" class="video__options p-0">
+                                          <li data-id="1" title="GoCDN" class="video__options-li">
+                                            <a href="#option1" class="video__options-a">Opción 1</a>
+                                          </li>
+                                          <li data-id="2" title="Netu" class="video__options-li">
+                                            <a href="#option2" class="video__options-a">Opción 2</a>
+                                          </li>
+                                          <li data-id="3" title="Okru" class="video__options-li">
+                                            <a href="#option3" class="video__options-a">Opción 3</a>
+                                          </li>
+                                        </ol>
+                                        <div class="video__box">
+                                          <iframe src="https://www.dailymotion.com/embed/video/k6i9XwUqNtPp5IwXH1G?api=postMessage&amp;id=tamamo_player&amp;origin=https%3A%2F%2Fmundodonghua.com&amp;queue-autoplay-next=false&amp;queue-enable=false&amp;sharing-enable=false&amp;ui-logo=false&amp;ui-start-screen-info=false" frameborder="0" class="video__box-iframe rounded"></iframe>
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle--SPIRITUALMASTER2-11" data-bs-toggle="modal" data-bs-dismiss="modal">Capitulo anterior</button>
+                                        <a href="#" class="btn btn-primary">Lista de episodios</a>
+                                        <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle--SPIRITUALMASTER2-" data-bs-toggle="modal" data-bs-dismiss="modal">Siguiente capitulo</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <h5 class="video-slide__title">SPIRITUAL MASTER 2</h5>
+                              <p class="d-none d-md-block">《 靈性大師們 》</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="box__img">
+                              <img src="https://mundodonghua.com/thumbs/A/A_Paragon_of_Wuhun/184kzzcadyf_eg2elq52.jpg" class="img" alt="A PARAGON OF WUHUN">
+                            </div>
+                            <div class="carousel-caption">
+                              <div class="video">
+                                <button class="btn btn-sm btn-outline-secondary video-slide__btn p-0" type="button">
+                                  <a href="#" class="video-slide__label py-2 px-3">Visitar <i class="fas fa-running video-slide__icon"></i></a>
+                                </button>
+                                <button class="btn btn-outline-success video-slide__btn p-0" type="button" data-bs-toggle="modal" href="#exampleModalToggle--APARAGONOFWUHUN-new" role="button">
+                                  <label for="" class="video-slide__label py-2 px-3">Ver ahora <i class="far fa-play-circle video-slide__icon"></i></label>
+                                </button>
+                                <!-- Capitulo - nuevo -->
+                                <div class="modal fade" id="exampleModalToggle--APARAGONOFWUHUN-new" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header px-4">
+                                        <h5 class="modal__title" id="exampleModalToggleLabel">A PARAGON OF WUHUN</h5>
+                                        <span class="badge rounded-pill bg-secondary mx-3 p-2">EPISODIO: 69</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body video">
+                                        <ol role="tablist" class="video__options p-0">
+                                          <li data-id="1" title="GoCDN" class="video__options-li">
+                                            <a href="#option1" class="video__options-a">Opción 1</a>
+                                          </li>
+                                          <li data-id="2" title="Netu" class="video__options-li">
+                                            <a href="#option2" class="video__options-a">Opción 2</a>
+                                          </li>
+                                          <li data-id="3" title="Okru" class="video__options-li">
+                                            <a href="#option3" class="video__options-a">Opción 3</a>
+                                          </li>
+                                        </ol>
+                                        <div class="video__box">
+                                          <iframe src="https://www.dailymotion.com/embed/video/k3JMcPFJDYITKjwXGVv?api=postMessage&amp;id=tamamo_player&amp;origin=https%3A%2F%2Fmundodonghua.com&amp;queue-autoplay-next=false&amp;queue-enable=false&amp;sharing-enable=false&amp;ui-logo=false&amp;ui-start-screen-info=false" frameborder="0" class="video__box-iframe rounded"></iframe>
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle--APARAGONOFWUHUN-11" data-bs-toggle="modal" data-bs-dismiss="modal">Capitulo anterior</button>
+                                        <a href="#" class="btn btn-primary">Lista de episodios</a>
+                                        <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle--APARAGONOFWUHUN-" data-bs-toggle="modal" data-bs-dismiss="modal">Siguiente capitulo</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <h5 class="video-slide__title">A PARAGON OF WUHUN</h5>
+                              <p class="d-none d-md-block">《 绝世武魂 》</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="box__img">
+                              <img src="https://mundodonghua.com/thumbs/S/Spirit_Sword_Sovereign_4/17696m903mc_xexrh16y.jpg" class="img"alt="SPIRIT SWORD SOVEREIGN">
+                            </div>
+                            <div class="carousel-caption">
+                              <div class="video">
+                                <button class="btn btn-sm btn-outline-secondary video-slide__btn p-0" type="button">
+                                  <a href="#" class="video-slide__label py-2 px-3">Visitar <i class="fas fa-running video-slide__icon"></i></a>
+                                </button>
+                                <button class="btn btn-outline-success video-slide__btn p-0" type="button" data-bs-toggle="modal" href="#exampleModalToggle--SPIRITSWORDSOVEREIGN-new" role="button">
+                                  <label for="" class="video-slide__label py-2 px-3">Ver ahora <i class="far fa-play-circle video-slide__icon"></i></label>
+                                </button>
+                                <!-- Capitulo - nuevo -->
+                                <div class="modal fade" id="exampleModalToggle--SPIRITSWORDSOVEREIGN-new" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                  <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                      <div class="modal-header px-4">
+                                        <h5 class="modal__title" id="exampleModalToggleLabel">SPIRIT SWORD SOVEREIGN</h5>
+                                        <span class="badge rounded-pill bg-secondary mx-3 p-2">EPISODIO: 84</span>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                      </div>
+                                      <div class="modal-body video">
+                                        <ol role="tablist" class="video__options p-0">
+                                          <li data-id="1" title="GoCDN" class="video__options-li">
+                                            <a href="#option1" class="video__options-a">Opción 1</a>
+                                          </li>
+                                          <li data-id="2" title="Netu" class="video__options-li">
+                                            <a href="#option2" class="video__options-a">Opción 2</a>
+                                          </li>
+                                          <li data-id="3" title="Okru" class="video__options-li">
+                                            <a href="#option3" class="video__options-a">Opción 3</a>
+                                          </li>
+                                        </ol>
+                                        <div class="video__box">
+                                          <iframe src="https://www.dailymotion.com/embed/video/k5V4NE3CwzKaepwXGHp?api=postMessage&amp;id=tamamo_player&amp;origin=https%3A%2F%2Fmundodonghua.com&amp;queue-autoplay-next=false&amp;queue-enable=false&amp;sharing-enable=false&amp;ui-logo=false&amp;ui-start-screen-info=false" frameborder="0" class="video__box-iframe rounded"></iframe>
+                                        </div>
+                                      </div>
+                                      <div class="modal-footer">
+                                        <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle--SPIRITSWORDSOVEREIGN-11" data-bs-toggle="modal" data-bs-dismiss="modal">Capitulo anterior</button>
+                                        <a href="#" class="btn btn-primary">Lista de episodios</a>
+                                        <button class="btn btn-primary disabled" data-bs-target="#exampleModalToggle--SPIRITSWORDSOVEREIGN-" data-bs-toggle="modal" data-bs-dismiss="modal">Siguiente capitulo</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <h5 class="video-slide__title">SPIRIT SWORD SOVEREIGN</h5>
+                              <p class="d-none d-md-block">《 靈劍君主 》</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions-Donghua" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions-Donghua" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      <!-- Fin Donghua -->
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item mb-5">
+                  <h2 class="accordion-header" id="flush-heading3">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">Aeni</button>
+                  </h2>
+                  <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#accordionFlushExample-ver">
+                    <div class="accordion-body">...</div>
+                  </div>
+                </div>
+              </div>
+              <!-- Acordion -1 -->
+            </div>
+          </section>
+          <div class="col-lg-3 col-sm-6 mx-auto main__aside mb-5">
+            <!-- ××× REDES SOCIALES ××× -->
+            <aside class="main__aside-nav p-2">
+              <nav class="main__rs">
+                <span class="main__rs-title">Redes Sociales</span>
+                <ul class="row m-0 p-0 ul">
+                  <li class="col-lg-3 col-sm-3 p-0 main__rs-list">
+                    <a href="" target="_blank"><img src="https://i.pinimg.com/originals/ce/c8/a6/cec8a6239de29acbfcfee0ccec995b9f.png" alt="Síguenos en Facebook" class="rounded-circle main__rs-img"></a>
+                  </li>
+                  <li class="col-lg-3 col-sm-3 p-0 main__rs-list">
+                    <a href="" target="_blank"><img src="https://comprar-seguidor.es/wp-content/uploads/2020/05/youtube_circles.png" alt="Síguenos en Youtube" class="rounded-circle main__rs-img"></a>
+                  </li>
+                  <li class="col-lg-3 col-sm-3 p-0 main__rs-list">
+                    <a href="" target="_blank"><img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c53e.png" alt="Síguenos en Twitter" class="rounded-circle main__rs-img"></a>
+                  </li>
+                  <li class="col-lg-3 col-sm-3 p-0 main__rs-list">
+                    <a href="" target="_blank"><img src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png" alt="Síguenos en Discord" class="rounded-circle main__rs-img"></a>
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+            <!-- ××× OTRAS PAGINAS ××× -->
+            <aside class="main__aside-nav mt-3">
+              <!-- MENU-LATERAL -->
+              <nav class="main__nav-lateral p-2">
+                <span class="main__rs-title">Visita tambien:</span>
+                <nav class="nav nav-pills flex-column">
+                  <a class="nav-link main__aside-link m-1" aria-current="page" href="#">ELEGIR OPCIÓN 3</a>
+                  <a class="nav-link main__aside-link m-1" href="#">ELEGIR OPCIÓN 4</a>
+                  <a class="nav-link main__aside-link m-1" href="#">ELEGIR OPCIÓN 5</a>
+                  <a class="nav-link disabled m-auto" href="#" tabindex="-1" aria-disabled="true">PROXIMAMENTE</a>
+                </nav>
+              </nav>
+            </aside>
+          </div>
+          <!-- ××× NOTICIAS ××× -->
+          <section>
+            <h2 class="section__subtitle">Últimas Noticias</h2>
+            <div class="row main__news rounded">
+              <div class="card rounded col-lg-3 col-md-6 col-sm-10 p-2">
+                <div class="main__news-container">
+                  <img src="https://media1.tenor.com/images/957b044dcb275df2c32be2b0cd11874d/tenor.gif?itemid=15277051" class="card-img-top main__news-img" alt="...">
+                </div>
+                <div class="card-body main__news-inf">
+                  <h5 class="card-title">Funimation llegará a Chile, Colombia y Perú próximamente</h5>
+                  <a href="#" type="button" class="btn btn-outline-info">Leer ahora <i class="fas fa-book-reader"></i></a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card rounded col-lg-3 col-md-6 col-sm-10 p-2">
+                <div class="main__news-container">
+                  <img src="https://media1.tenor.com/images/3109b3f144510b5abe27eddac0c305a4/tenor.gif?itemid=16580815" class="card-img-top main__news-img" alt="...">
+                </div>
+                <div class="card-body main__news-inf">
+                  <h5 class="card-title">Hololive: Minato Aqua vuelve a pausar sus actividades por mala salud</h5>
+                  <a href="#" type="button" class="btn btn-outline-info">Leer ahora <i class="fas fa-book-reader"></i></a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card rounded col-lg-3 col-md-6 col-sm-10 p-2">
+                <div class="main__news-container">
+                  <img src="https://somoskudasai.com/wp-content/uploads/2021/04/ryu_to_sobakasu_no_hime_teaser-1.jpg" class="card-img-top main__news-img" alt="...">
+                </div>
+                <div class="card-body main__news-inf">
+                  <h5 class="card-title">La película de Mamoru Hosoda, Ryuu to Sobakasu no Hime, revela un nuevo visual</h5>
+                  <a href="#" type="button" class="btn btn-outline-info">Leer ahora <i class="fas fa-book-reader"></i></a>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </div>
+              </div>
+              <div class="card rounded col-lg-3 col-md-6 col-sm-10 p-2">
+                <a href="#" type="button" class="btn btn-outline-info main__news-more">
+                  <i class="fas fa-book icon__new"></i>
+                  <span class="icon__text">Leer más noticias</span>
+                  <i class="fas fa-plus icon__more"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- ××× PUBLICIDAD-3 ××× -->
+      <aside class="col-md-2 col-sm-0 main__publicity">
+        <span ><i class="fas fa-ad"></i>Espacio Publicitario </span>
+        <figure class="main__publicity-figure--lateral rounded">
+          <a href="" target="_blank">
+            <img src="" alt="Publicidad1">
+          </a>
+        </figure>
+      </aside>
+      <!-- navegador al principio de pagina -->
+      <nav class="fixed-bottom flechita p-0">
+        <div class="flechita__box p-0">
+          <a class="navbar-brand flechita__box-link p-0 m-0" href="#"><i class="fas fa-arrow-circle-up"></i></a>
+        </div>
+      </nav>
+    </main>
+
+    <!----------///// ⌂⌂⌂ /////---------- 
+      █▀▄ █ ██▀    █▀▄ ██▀    █▀▄ ▄▀▄ ▄▀  █ █▄ █ ▄▀▄       
+      █▀  █ █▄▄    █▄▀ █▄▄    █▀  █▀█ ▀▄█ █ █ ▀█ █▀█       
+    ----------///// ⌂⌂⌂ /////---------->
+
+    <footer class="footer m-0 p-3 row">
+      <div class="footer__left col-sm-12 col-lg-6">
+        <h5 class="footer__left-title m-0"><i class="fab fa-css3"></i>Mi Página</h5>
+        <h6 class="footer__left-subtitle mb-0">© 2021 - Ningún vídeo se encuentra alojado en nuestros servidores.</h6>
+      </div>
+      <nav class="footer__right col-lg-6">
+        <ul class="footer__nav m-0 p-0 row">
+          <li class="col-sm-4">
+            <a href="#" class="footer__nav-link">Términos y condiciones</a>
+          </li>
+          <li class="col-sm-4">
+            <a href="#" class="footer__nav-link">Politica de privacidad</a>
+          </li>
+          <li class="col-sm-4">
+            <a href="#" class="footer__nav-link">Sobre nosotros</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </div>
+  <!-- BUNDLE - SCRIPT -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

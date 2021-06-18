@@ -1,7 +1,10 @@
 // COLOUR
 $c-body: white;
 $c-body-trasparent: rgba($c-body, 0.5);
-$c-header: black;
+$c-header_defaut: black;
+$c-header_1: darkblue;
+$c-header_2: red;
+$c-header: $c-header_defaut;
 $c-main: beige;
 $c-footer: darkgray;
 $c-text: rgb(30, 30, 30);
@@ -19,3 +22,51 @@ $f-menu: 'Zen Dots', cursive;
 $m-text: 0.5rem;
 $m-title: $m-text * 9;
 $m-subtitle: $m-text * 6;
+
+// FOR
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: ($i - 7) * -0.6rem;
+    font-weight: ($i - 7) * -150;
+  }
+  .h#{$i} {
+    font-size: (($i - 7) * -0.6rem) - 0.3rem;
+  }
+  h#{$i}, .h#{$i} {
+    color: darken(white, ($i * 8) + 52);
+  }
+}
+
+// MIXIN
+@mixin title ($grosor-de-letra, $lugar-del-texto) {
+  font-size: $m-title;
+  font-family: $f-title;
+  font-weight: $grosor-de-letra;
+  text-align: $lugar-del-texto;
+}
+@mixin subtitle ($grosor-de-letra, $lugar-del-texto) {
+  font-size: $m-subtitle;
+  font-family: $f-subtitle;
+  font-weight: $grosor-de-letra;
+  text-align: $lugar-del-texto;
+}
+@mixin header {
+  top: 0;
+  position: sticky;
+  z-index: 100;
+  @if ($c-header == $c-header_1) {
+    background-color: $c-header_1;
+    a {
+      color: white;
+    }
+  }
+  @else if ($c-header == $c-header_2) {
+    background-color: $c-header_2;
+    a {
+      color: white;
+    }
+  }
+  @else {
+    background-color: $c-header_defaut;
+  }
+}
